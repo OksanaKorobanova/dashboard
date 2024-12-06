@@ -9,7 +9,7 @@ type DashboardCardProps = {
 
 const DashboardCard = ({ title, count, icon }: DashboardCardProps) => {
   return (
-    <Card className='bg-zinc-50 dark:bg-zinc-800 p-4 pb-0'>
+    <Card className='p-4 pb-0'>
       <CardContent>
         <h3 className='text-xl text-center mb-4 font-bold text-zinc-700 dark:text-zinc-200'>
           {title}

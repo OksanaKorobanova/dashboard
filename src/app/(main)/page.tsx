@@ -2,7 +2,6 @@ import DashboardCard from '@/components/dashboard/DashboardCard';
 import PostsTable from '@/components/posts/PostsTable';
 import AnalyticsChart from '@/components/dashboard/AnalyticsChart';
 import { Folder, MessageCircle, Newspaper, User } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
 
 export default function Home() {
   return (
@@ -30,11 +29,8 @@ export default function Home() {
         />
       </div>
       <AnalyticsChart />
-      <Card className='bg-zinc-50 dark:bg-zinc-800 p-4 pb-0'>
-        <CardContent>
-          <PostsTable title='Latest Posts' limit={5} />
-        </CardContent>
-      </Card>
+
+      <PostsTable title='Latest Posts' limit={5} />
     </div>
   );
 }
