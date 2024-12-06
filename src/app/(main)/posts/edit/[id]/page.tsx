@@ -33,11 +33,11 @@ const formSchema = z.object({
   }),
 });
 
-interface PostEditPageProps {
+type PostEditPageProps = {
   params: {
     id: string;
   };
-}
+};
 
 const PostEditPage = ({ params }: PostEditPageProps) => {
   const { toast } = useToast();

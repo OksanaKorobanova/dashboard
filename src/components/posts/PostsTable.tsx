@@ -11,10 +11,10 @@ import Link from 'next/link';
 import posts from '@/data/posts';
 import { Post } from '@/types/posts';
 
-interface PostsTableProps {
+type PostsTableProps = {
   limit?: number;
   title?: string;
-}
+};
 
 const PostsTable = ({ limit, title }: PostsTableProps) => {
   // Sort posts in dec order based on date

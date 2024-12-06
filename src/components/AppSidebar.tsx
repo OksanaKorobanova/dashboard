@@ -11,7 +11,7 @@ import {
   SidebarMenuItem,
 } from '@/components/ui/sidebar';
 
-// Menu items.
+// Menu items
 const suggestions = [
   {
     title: 'Dashboard',
