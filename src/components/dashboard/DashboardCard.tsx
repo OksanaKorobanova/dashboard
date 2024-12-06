@@ -9,14 +9,14 @@ type DashboardCardProps = {
 
 const DashboardCard = ({ title, count, icon }: DashboardCardProps) => {
   return (
-    <Card className='bg-zinc-100 dark:bg-zinc-800 p-4 pb-0'>
+    <Card className='bg-zinc-50 dark:bg-zinc-800 p-4 pb-0'>
       <CardContent>
-        <h3 className='text-3xl text-center mb-4 font-bold text-slate-500 dark:text-zinc-200'>
+        <h3 className='text-xl text-center mb-4 font-bold text-zinc-700 dark:text-zinc-200'>
           {title}
         </h3>
         <div className='flex gap-5 justify-center items-center'>
           {icon}
-          <h3 className='text-5xl font-semibold text-zinc-500 dark:text-zinc-200'>
+          <h3 className='text-5xl font-semibold text-zinc-900 dark:text-zinc-200'>
             {count}
           </h3>
         </div>

@@ -10,6 +10,7 @@ import {
 import Link from 'next/link';
 import posts from '@/data/posts';
 import { Post } from '@/types/posts';
+import { Button } from '../ui/button';
 
 type PostsTableProps = {
   limit?: number;
@@ -52,9 +53,9 @@ const PostsTable = ({ limit, title }: PostsTableProps) => {
               </TableCell>
               <TableCell>
                 <Link href={`/posts/edit/${post.id}`}>
-                  <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-xs'>
+                  <Button variant='default' size='sm'>
                     Edit
-                  </button>
+                  </Button>
                 </Link>
               </TableCell>
             </TableRow>

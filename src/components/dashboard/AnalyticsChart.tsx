@@ -48,7 +48,7 @@ const AnalyticsChart = () => {
 
   return (
     <>
-      <Card>
+      <Card className='bg-zinc-50 dark:bg-zinc-800 p-4 pb-0'>
         <CardHeader>
           <CardTitle>Analytics For This Year</CardTitle>
           <CardDescription>Views Per Month</CardDescription>
